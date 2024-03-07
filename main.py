@@ -30,7 +30,7 @@ def clean_txt_files(first, second):
 
 def api_work(first):
     targets = str(
-        BS(requests.get(f"https://www.nationstates3.net/cgi-bin/api.cgi?q=regionsbytag;tags=frontier",
+        BS(requests.get(f"https://www.nationstates.net/cgi-bin/api.cgi?q=regionsbytag;tags=frontier",
                         headers=headers, auth=AUTH).text, "xml").find_all("REGIONS"))  # our only API call or site interaction
 
     targets = targets.replace('[<REGIONS>', '')  # cleans the data before dumping it to the txt file
