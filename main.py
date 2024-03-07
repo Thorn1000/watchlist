@@ -9,8 +9,6 @@ headers = {
     "User-Agent": f"Newly Founderless Regions/{version} (developer: https://github.com/Thorn1000/Newly-Founderless ; user:Thorn1000;)"
 }  # Im a good boy and set my useragent [v]
 
-AUTH = ("frontiers", "fse945jAU4[a1")
-
 def clean_txt_files(first, second):
     with open('first.txt', 'r') as f:  # run a quick check to make sure first.txt has any data
         first_line = f.readline()
